@@ -1,6 +1,8 @@
 '''
 Author: Tom Rafter
 Description: Scrapes a select list of news sites
+and saves scrape to a text file.  Each scrape ammends 
+the original file
 '''
 
 from selenium import webdriver
