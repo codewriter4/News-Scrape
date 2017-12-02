@@ -1,3 +1,8 @@
+'''
+Author: Tom Rafter
+Description: Scrapes a select list of news sites
+'''
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
