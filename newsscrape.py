@@ -18,8 +18,8 @@ driver = webdriver.Chrome()
 
 
 
-def bloomberg_news():
-	driver.get("https://www.bloomberg.com/")
+def bnew():
+	driver.get("https://www.....com/")
 	bloomberg = driver.find_element_by_xpath('//*[@id="content"]/div/div/div')
 	bnews=bloomberg.text
 	print(bnews)
@@ -28,8 +28,8 @@ def bloomberg_news():
 	f.write('\n')
 	f.close()
 
-def cnn_news():
-	driver.get("https://www.cnn.com/")
+def cnews():
+	driver.get("https://www.....com/")
 	cnn=driver.find_element_by_xpath('//*[@id="homepage1-zone-1"]')
 	cnnnews=cnn.text
 	print(cnnnews)
@@ -37,8 +37,8 @@ def cnn_news():
 	f.write(cnnnews)
 	f.close()
 
-def aljazeera():
-	driver.get("http://www.aljazeera.com/")
+def anews():
+	driver.get("http://www.....com/")
 	aljazeera_headlines=driver.find_element_by_xpath('//*[@id="placeholder1"]/div/div[1]/div/div/div[1]/div/section/div/div/div/div[1]/div')
 	aljazeera_news=aljazeera_headlines.text
 	time.sleep(6)
@@ -48,8 +48,8 @@ def aljazeera():
 	f.write(aljazeera_news)
 	f.close()
 
-def nytimes():
-	driver.get("http://www.nytimes.com/")
+def nnews():
+	driver.get("http://www.....com/")
 	nytimes_headlines=driver.find_element_by_xpath('/html/body')
 	nytimes=nytimes_headlines.text
 	print(nytimes)
@@ -57,10 +57,10 @@ def nytimes():
 	f.write(nytimes)
 	f.close()
 
-bloomberg_news()
-cnn_news()
-nytimes()
-# aljazeera()
+bnews()
+cnews()
+nnews()
+anews()
 
 
 
